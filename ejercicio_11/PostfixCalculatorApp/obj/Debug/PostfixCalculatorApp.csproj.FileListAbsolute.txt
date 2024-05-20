@@ -1,0 +1,10 @@
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\bin\Debug\PostfixCalculatorApp.exe.config
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\bin\Debug\PostfixCalculatorApp.exe
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\bin\Debug\PostfixCalculatorApp.pdb
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\bin\Debug\CalculatorLibrary.dll
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\bin\Debug\CalculatorLibrary.pdb
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\obj\Debug\PostfixCalculatorApp.csproj.AssemblyReference.cache
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\obj\Debug\PostfixCalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\obj\Debug\PostfixCalculatorApp.csproj.CopyComplete
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\obj\Debug\PostfixCalculatorApp.exe
+C:\Users\CAGUAYA\Desktop\317\examen\PostfixCalculatorApp\obj\Debug\PostfixCalculatorApp.pdb

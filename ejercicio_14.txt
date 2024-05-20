@@ -1,0 +1,32 @@
+La taxonomía de Flynn clasifica los sistemas de computación paralela y distribuida en cuatro categorías principales basadas en el número de flujos de instrucciones y flujos de datos que operan simultáneamente. Las categorías son:
+
+SISD (Single Instruction, Single Data): Un solo flujo de instrucciones opera sobre un solo flujo de datos.
+SIMD (Single Instruction, Multiple Data): Un solo flujo de instrucciones opera sobre múltiples flujos de datos.
+MISD (Multiple Instruction, Single Data): Múltiples flujos de instrucciones operan sobre un solo flujo de datos.
+MIMD (Multiple Instruction, Multiple Data): Múltiples flujos de instrucciones operan sobre múltiples flujos de datos.
+Vamos a clasificar OPENMP, MPI y multiprocessing según esta taxonomía y justificar la clasificación:
+
+OPENMP
+Clasificación: MIMD (Multiple Instruction, Multiple Data)
+
+Justificación:
+
+Descripción: OPENMP es una API que soporta la programación de memoria compartida multiprocesadora en C, C++ y Fortran. Permite paralelizar código mediante el uso de directivas de compilador, variables de entorno y llamadas a rutinas.
+Funcionamiento: En OPENMP, múltiples threads (hilos) pueden ejecutar diferentes instrucciones sobre diferentes partes de datos en paralelo. Cada hilo tiene su propio conjunto de instrucciones y puede operar en diferentes partes del espacio de datos.
+Ejemplo: Una región paralela en OPENMP crea múltiples threads, y cada thread puede ejecutar una parte diferente de un bucle sobre un subconjunto de los datos totales.
+MPI
+Clasificación: MIMD (Multiple Instruction, Multiple Data)
+
+Justificación:
+
+Descripción: MPI (Message Passing Interface) es un estándar para programación paralela en sistemas de memoria distribuida. Se utiliza para comunicación de paso de mensajes entre múltiples procesos que pueden estar en el mismo nodo o en diferentes nodos de una red.
+Funcionamiento: En MPI, cada proceso puede ejecutar diferentes instrucciones y operar sobre diferentes conjuntos de datos. Los procesos se comunican entre sí mediante el paso de mensajes.
+Ejemplo: En una aplicación MPI, diferentes procesos pueden ejecutar diferentes funciones y comunicarse entre sí para compartir los resultados parciales o datos necesarios para continuar el procesamiento.
+multiprocessing en Python
+Clasificación: MIMD (Multiple Instruction, Multiple Data)
+
+Justificación:
+
+Descripción: La biblioteca multiprocessing en Python permite la creación de procesos que pueden ejecutarse en paralelo, cada uno con su propio espacio de memoria. Esto facilita la programación paralela en sistemas de múltiples núcleos.
+Funcionamiento: Cada proceso creado con multiprocessing puede ejecutar un conjunto diferente de instrucciones sobre diferentes datos. Los procesos son independientes y pueden comunicarse entre sí mediante colas, pipes y otros mecanismos de comunicación inter-proceso.
+Ejemplo: En un programa que utiliza multiprocessing, cada proceso puede encargarse de calcular una parte diferente de un problema más grande, como calcular términos de la serie de Fibonacci en paralelo.
